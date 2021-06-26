@@ -16,6 +16,9 @@ import net.minecraft.util.registry.Registry;
 
 public class MagicMirror implements ModInitializer {
 
+    public static final ConfigHolder<MagicMirrorConfig> CONFIG = MagicMirrorConfig.init();
+    public static  MagicMirrorConfig getConfig() {return CONFIG.getConfig();}
+
     public static final MagicMirrorItem MAGIC_MIRROR = new MagicMirrorItem(new Item.Settings().group(ItemGroup.TRANSPORTATION).maxCount(1));
     private static final Identifier DUNGEON_CHEST_ID = LootTables.SIMPLE_DUNGEON_CHEST;
     private static final Identifier MINESHAFT_CHEST_ID = LootTables.ABANDONED_MINESHAFT_CHEST;
@@ -23,7 +26,7 @@ public class MagicMirror implements ModInitializer {
     private static final Identifier END_CHEST_ID = LootTables.END_CITY_TREASURE_CHEST;
     private static final Identifier BASTION_CHEST_ID = LootTables.BASTION_OTHER_CHEST;
 
-    public static final ConfigHolder<MagicMirrorConfig> CONFIG = MagicMirrorConfig.init();
+
 
     @Override
     public void onInitialize() {
@@ -117,5 +120,5 @@ public class MagicMirror implements ModInitializer {
             }
         }
     }
-    public static  MagicMirrorConfig getConfig() {return CONFIG.getConfig();}
+
 }

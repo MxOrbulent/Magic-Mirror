@@ -9,10 +9,17 @@
   "text.autoconfig.Magic Mirror.option.interdimensional": "Interdimensional",
   "text.autoconfig.Magic Mirror.option.xpCost": "XP Cost",
   "text.autoconfig.Magic Mirror.option.damage": "Damage",
-  "text.autoconfig.Magic Mirror.option.weaknessLength": "Weakness Duration",
-  "text.autoconfig.Magic Mirror.option.fatigueLength": "Mining Fatigue Duration",
-  "text.autoconfig.Magic Mirror.option.blindnessLength": "Blindness Duration",
-  "text.autoconfig.Magic Mirror.option.hungerLength": "Hunger Duration",
-  "text.autoconfig.Magic Mirror.option.nauseaLength": "Nausea Duration"
-
+  "text.autoconfig.Magic Mirror.option.useTime": "Use Time",
+  "text.autoconfig.Magic Mirror.option.spawnSet": "Spawn Must be Set",
+  "text.autoconfig.Magic Mirror.option.effectOptions": "Mirror Effect Options",
+  "text.autoconfig.Magic Mirror.option.effectOptions.weaknessLength": "Weakness Duration",
+  "text.autoconfig.Magic Mirror.option.effectOptions.fatigueLength": "Mining Fatigue Duration",
+  "text.autoconfig.Magic Mirror.option.effectOptions.blindnessLength": "Blindness Duration",
+  "text.autoconfig.Magic Mirror.option.effectOptions.hungerLength": "Hunger Duration",
+  "text.autoconfig.Magic Mirror.option.effectOptions.nauseaLength": "Nausea Duration",
+  "text.autoconfig.Magic Mirror.option.effectOptions.weaknessLevel": "Weakness Strength",
+  "text.autoconfig.Magic Mirror.option.effectOptions.fatigueLevel": "Mining Fatigue Strength",
+  "text.autoconfig.Magic Mirror.option.effectOptions.blindnessLevel": "Blindness Strength",
+  "text.autoconfig.Magic Mirror.option.effectOptions.hungerLevel": "Hunger Strength",
+  "text.autoconfig.Magic Mirror.option.effectOptions.nauseaLevel": "Nausea Strength"
 }

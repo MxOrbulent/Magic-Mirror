@@ -20,44 +20,63 @@ public class MagicMirrorConfig implements ConfigData
     /**
      * mirror options
      */
-    //@Comment("")
-    //@ConfigEntry.Gui.CollapsibleObject
-    //public mirrorOptions mirrorOptions = new mirrorOptions();
 
+    @Comment("Changing this option §c§ldeletes all existing mirrors. §rRequires restart")
+    public boolean recipe = true;
 
-    //public static class mirrorOptions
-    //{
-        @Comment("Changing this option §c§ldeletes all existing mirrors. §rRequires restart")
-        public boolean recipe = true;
+    @Comment("Enables the mirror to spawn in chest loot. Requires restart")
+    public boolean chestLoot = false;
 
-        @Comment("Enables the mirror to spawn in chest loot. Requires restart")
-        public boolean chestLoot = false;
+    @Comment("Mirror works between dimensions")
+    public boolean interdimensional = false;
 
-        @Comment("Mirror works between dimensions")
-        public boolean interdimensional = false;
+    @Comment("XP cost (in levels) of mirror")
+    public int xpCost = 2;
 
-        @Comment("XP cost (in levels) of mirror")
-        public int xpCost = 2;
+    @Comment("Damage inflicted by mirror in half-hearts")
+    public float damage = 5.0F;
 
-        @Comment("Damage inflicted by mirror in half-hearts")
-        public float damage = 5.0F;
+    @Comment("Time it takes to use mirror in ticks. Requires restart")
+    public int useTime = 32;
+
+    @Comment("A spawn must be set for the mirror to work")
+    public boolean spawnSet = true;
+
+    @Comment("")
+    @ConfigEntry.Gui.CollapsibleObject
+    public effectOptions effectOptions = new effectOptions();
+    public static class effectOptions {
 
         @Comment("Length (in ticks) of weakness inflicted by mirror")
         public int weaknessLength = 1200;
 
+        @Comment("")
+        public int weaknessLevel = 1;
+
         @Comment("Length (in ticks) of mining fatigue inflicted by mirror")
         public int fatigueLength = 100;
+
+        @Comment("")
+        public int fatigueLevel = 3;
 
         @Comment("Length (in ticks) of blindness inflicted by mirror")
         public int blindnessLength = 100;
 
+        @Comment("")
+        public int blindnessLevel = 1;
+
         @Comment("Length (in ticks) of hunger inflicted by mirror")
         public int hungerLength = 0;
+
+        @Comment("")
+        public int hungerLevel = 1;
 
         @Comment("Length (in ticks) of nausea inflicted by mirror")
         public int nauseaLength = 0;
 
-    //}
+        @Comment("")
+        public int nauseaLevel = 1;
+    }
 
 
 
